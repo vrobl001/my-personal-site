@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.appOuterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.appOuterContainer .appInnerContainer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  overflow-y: auto;
+}
+
+.navBar {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: lightblue;
+  -webkit-box-shadow: 0rem 0.1rem 0.25rem 0rem #42526e;
+          box-shadow: 0rem 0.1rem 0.25rem 0rem #42526e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 1;
+}
+
+.navBar a {
+  text-decoration: none;
+}
+
+.navBar a:visited {
+  color: black;
+}
+
+.navBar .linksContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navBar .linksContainer ul li {
+  margin: 1rem;
+  list-style: none;
+}
+
+footer {
+  background-color: lightblue;
+  -webkit-box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
+          box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

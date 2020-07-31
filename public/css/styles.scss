@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.appOuterContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .appInnerContainer {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+}
+
+// Navbar
+.navBar {
+  align-items: center;
+  background-color: lightblue;
+  box-shadow: 0rem 0.1rem 0.25rem 0rem rgb(66, 82, 110);
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  a {
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+  }
+  .linksContainer {
+    ul {
+      display: flex;
+      li {
+        margin: 1rem;
+        list-style: none;
+      }
+    }
+  }
+}
+
+// Footer
+footer {
+  background-color: lightblue;
+  box-shadow: 0rem -0.1rem 0.25rem 0rem rgb(66, 82, 110);
+  text-align: center;
+}
