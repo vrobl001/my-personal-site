@@ -1,3 +1,20 @@
+.navbar {
+  -webkit-box-shadow: 0rem 0.1rem 0.25rem 0rem rgba(66, 82, 110, 0.5);
+          box-shadow: 0rem 0.1rem 0.25rem 0rem rgba(66, 82, 110, 0.5);
+  z-index: 1;
+}
+
+footer {
+  -webkit-box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
+          box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0.5rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -21,45 +38,47 @@ body {
   overflow-y: auto;
 }
 
-.navBar {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: lightblue;
-  -webkit-box-shadow: 0rem 0.1rem 0.25rem 0rem #42526e;
-          box-shadow: 0rem 0.1rem 0.25rem 0rem #42526e;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  z-index: 1;
+pre {
+  color: white;
 }
 
-.navBar a {
-  text-decoration: none;
+.darkGray {
+  background-color: #1e1e1e;
 }
 
-.navBar a:visited {
-  color: black;
+.darkBlue {
+  color: #358cd6;
 }
 
-.navBar .linksContainer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.blue {
+  color: #4fc1ff;
 }
 
-.navBar .linksContainer ul li {
-  margin: 1rem;
-  list-style: none;
+.lightBlue {
+  color: #9cdcfe;
 }
 
-footer {
-  background-color: lightblue;
-  -webkit-box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
-          box-shadow: 0rem -0.1rem 0.25rem 0rem #42526e;
-  text-align: center;
+.green {
+  color: #00dc17;
+}
+
+.lightGreen {
+  color: #b5cea8;
+}
+
+.darkGreen {
+  color: #438a49;
+}
+
+.yellow {
+  color: #dccd79;
+}
+
+.orange {
+  color: #ce8349;
+}
+
+.purple {
+  color: #c586c0;
 }
 /*# sourceMappingURL=styles.css.map */

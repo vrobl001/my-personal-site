@@ -1,3 +1,9 @@
+@import '../../views/partials/header/_header.scss';
+@import '../../views/partials/footer/_footer.scss';
+@import '../../views/about/_about.scss';
+@import '../../views/contact/_contact.scss';
+@import '../../views/projects/_projects.scss';
+
 body {
   margin: 0;
   padding: 0;
@@ -13,34 +19,48 @@ body {
   }
 }
 
-// Navbar
-.navBar {
-  align-items: center;
-  background-color: lightblue;
-  box-shadow: 0rem 0.1rem 0.25rem 0rem rgb(66, 82, 110);
-  display: flex;
-  justify-content: space-between;
-  z-index: 1;
-  a {
-    text-decoration: none;
-  }
-  a:visited {
-    color: black;
-  }
-  .linksContainer {
-    ul {
-      display: flex;
-      li {
-        margin: 1rem;
-        list-style: none;
-      }
-    }
-  }
+// Home Page
+
+pre {
+  color: white;
 }
 
-// Footer
-footer {
-  background-color: lightblue;
-  box-shadow: 0rem -0.1rem 0.25rem 0rem rgb(66, 82, 110);
-  text-align: center;
+.darkGray {
+  background-color: rgb(30, 30, 30);
+}
+
+.darkBlue {
+  color: rgb(53, 140, 214);
+}
+
+.blue {
+  color: rgb(79, 193, 255);
+}
+
+.lightBlue {
+  color: rgb(156, 220, 254);
+}
+
+.green {
+  color: rgb(0, 220, 23);
+}
+
+.lightGreen {
+  color: rgb(181, 206, 168);
+}
+
+.darkGreen {
+  color: rgb(67, 138, 73);
+}
+
+.yellow {
+  color: rgb(220, 205, 121);
+}
+
+.orange {
+  color: rgb(206, 131, 73);
+}
+
+.purple {
+  color: rgb(197, 134, 192);
 }
