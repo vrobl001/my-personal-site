@@ -1,57 +1,64 @@
 .indexContainer {
+  background-attachment: fixed;
   background-image: url('/images/react-wallpaper.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
   h1 {
     color: white;
   }
-}
 
-.profilePicContainer {
-  display: flex;
-  justify-content: center;
-  .profilePic {
-    border-radius: 50%;
-    height: 20rem;
-    box-shadow: 0rem 0rem 0.25rem 0.1rem lightblue;
-    margin: 1rem;
+  .profilePicContainer {
+    display: flex;
+    justify-content: center;
+    .profilePic {
+      border-radius: 50%;
+      box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+      height: 17.5rem;
+      margin: 1rem;
+    }
   }
-}
 
-.profileContainer {
-  display: flex;
-  justify-content: center;
-}
+  .profileContainer {
+    display: flex;
+    justify-content: center;
+    pre {
+      background-color: rgb(30, 30, 30);
+      color: white;
+      width: 50rem;
+      box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+      img {
+        height: 1rem;
+        width: 1rem;
+      }
+    }
+    .darkBlue {
+      color: rgb(53, 140, 214);
+    }
 
-pre {
-  background-color: rgb(30, 30, 30);
-  color: white;
-  width: 50rem;
-}
+    .blue {
+      color: rgb(79, 193, 255);
+    }
 
-.darkBlue {
-  color: rgb(53, 140, 214);
-}
+    .lightBlue {
+      color: rgb(156, 220, 254);
+    }
 
-.blue {
-  color: rgb(79, 193, 255);
-}
+    .green {
+      color: rgb(0, 220, 23);
+    }
 
-.lightBlue {
-  color: rgb(156, 220, 254);
-}
+    .lightGreen {
+      color: rgb(181, 206, 168);
+    }
 
-.green {
-  color: rgb(0, 220, 23);
-}
-
-.lightGreen {
-  color: rgb(181, 206, 168);
-}
-
-.orange {
-  color: rgb(206, 131, 73);
+    .orange {
+      color: rgb(206, 131, 73);
+    }
+  }
 }

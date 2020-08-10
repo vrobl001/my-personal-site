@@ -18,19 +18,29 @@ footer p {
 }
 
 .indexContainer {
+  background-attachment: fixed;
   background-image: url("/images/react-wallpaper.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .indexContainer h1 {
   color: white;
 }
 
-.profilePicContainer {
+.indexContainer .profilePicContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,15 +49,15 @@ footer p {
           justify-content: center;
 }
 
-.profilePicContainer .profilePic {
+.indexContainer .profilePicContainer .profilePic {
   border-radius: 50%;
-  height: 20rem;
-  -webkit-box-shadow: 0rem 0rem 0.25rem 0.1rem lightblue;
-          box-shadow: 0rem 0rem 0.25rem 0.1rem lightblue;
+  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+          box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+  height: 17.5rem;
   margin: 1rem;
 }
 
-.profileContainer {
+.indexContainer .profileContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,33 +66,40 @@ footer p {
           justify-content: center;
 }
 
-pre {
+.indexContainer .profileContainer pre {
   background-color: #1e1e1e;
   color: white;
   width: 50rem;
+  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+          box-shadow: 0rem 0rem 0.1rem 0.1rem white;
 }
 
-.darkBlue {
+.indexContainer .profileContainer pre img {
+  height: 1rem;
+  width: 1rem;
+}
+
+.indexContainer .profileContainer .darkBlue {
   color: #358cd6;
 }
 
-.blue {
+.indexContainer .profileContainer .blue {
   color: #4fc1ff;
 }
 
-.lightBlue {
+.indexContainer .profileContainer .lightBlue {
   color: #9cdcfe;
 }
 
-.green {
+.indexContainer .profileContainer .green {
   color: #00dc17;
 }
 
-.lightGreen {
+.indexContainer .profileContainer .lightGreen {
   color: #b5cea8;
 }
 
-.orange {
+.indexContainer .profileContainer .orange {
   color: #ce8349;
 }
 
