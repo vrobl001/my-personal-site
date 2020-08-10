@@ -5,7 +5,7 @@
 @import '../../views/contact/_contact.scss';
 @import '../../views/projects/_projects.scss';
 
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -18,4 +18,25 @@ body {
     flex-grow: 1;
     overflow-y: auto;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 0.5rem;
+  box-shadow: inset 0 0 0.25rem rgba(66, 82, 110, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(235, 236, 240);
+  border-radius: 0.5rem;
+  box-shadow: inset 0.1rem 0.1rem 0.2rem rgba(66, 82, 110, 0.75);
+  size: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(66, 82, 110, 0.2);
+  box-shadow: inset 0.1rem 0.1rem 0.2rem rgb(66, 82, 110);
 }
