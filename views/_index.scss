@@ -1,18 +1,35 @@
+.indexContainer {
+  background-image: url('/images/react-wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  padding: 0.5rem;
+  h1 {
+    color: white;
+  }
+}
+
 .profilePicContainer {
   display: flex;
   justify-content: center;
   .profilePic {
     border-radius: 50%;
     height: 20rem;
+    box-shadow: 0rem 0rem 0.25rem 0.1rem lightblue;
+    margin: 1rem;
   }
 }
 
-pre {
-  color: white;
+.profileContainer {
+  display: flex;
+  justify-content: center;
 }
 
-.darkGray {
+pre {
   background-color: rgb(30, 30, 30);
+  color: white;
+  width: 50rem;
 }
 
 .darkBlue {
@@ -35,18 +52,6 @@ pre {
   color: rgb(181, 206, 168);
 }
 
-.darkGreen {
-  color: rgb(67, 138, 73);
-}
-
-.yellow {
-  color: rgb(220, 205, 121);
-}
-
 .orange {
   color: rgb(206, 131, 73);
-}
-
-.purple {
-  color: rgb(197, 134, 192);
 }
