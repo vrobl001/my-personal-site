@@ -1,0 +1,52 @@
+.profilePicContainer {
+  display: flex;
+  justify-content: center;
+  .profilePic {
+    border-radius: 50%;
+    height: 20rem;
+  }
+}
+
+pre {
+  color: white;
+}
+
+.darkGray {
+  background-color: rgb(30, 30, 30);
+}
+
+.darkBlue {
+  color: rgb(53, 140, 214);
+}
+
+.blue {
+  color: rgb(79, 193, 255);
+}
+
+.lightBlue {
+  color: rgb(156, 220, 254);
+}
+
+.green {
+  color: rgb(0, 220, 23);
+}
+
+.lightGreen {
+  color: rgb(181, 206, 168);
+}
+
+.darkGreen {
+  color: rgb(67, 138, 73);
+}
+
+.yellow {
+  color: rgb(220, 205, 121);
+}
+
+.orange {
+  color: rgb(206, 131, 73);
+}
+
+.purple {
+  color: rgb(197, 134, 192);
+}
