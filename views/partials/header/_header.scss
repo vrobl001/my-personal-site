@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   font-family: 'Open Sans', sans-serif;
   height: 3.5rem;
   padding: 0;
@@ -22,6 +22,13 @@
   }
   li:hover {
     background-color: rgba(100, 100, 100, 0.1);
+    color: white;
+  }
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.85);
+  a {
     color: white;
   }
 }

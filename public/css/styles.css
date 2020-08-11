@@ -1,5 +1,5 @@
 .navbar {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.85);
   font-family: 'Open Sans', sans-serif;
   height: 3.5rem;
   padding: 0;
@@ -35,6 +35,14 @@
   color: white;
 }
 
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.85);
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
 .indexContainer {
   background-image: url("/images/minimal3.jpg");
   background-repeat: no-repeat;
@@ -59,7 +67,7 @@
 }
 
 .indexContainer .infoContainer h1 {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
   font-family: 'Kaushan Script', cursive;
   font-size: 4rem;
   text-shadow: 0.1rem 0.1rem black;
@@ -76,8 +84,8 @@
 
 .indexContainer .infoContainer .profilePicContainer .profilePic {
   border-radius: 50%;
-  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem white;
-          box-shadow: 0rem 0rem 0.1rem 0.1rem white;
+  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
+          box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
   height: 16rem;
   margin: 1rem;
 }
@@ -93,8 +101,8 @@
 
 .indexContainer .infoContainer .profileContainer pre {
   background-color: #1e1e1e;
-  -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.9);
-          box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
+          box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
   color: white;
   padding: 0.5rem;
   width: 50rem;
@@ -143,14 +151,89 @@
 }
 
 .indexContainer .quoteContainer p {
-  color: white;
+  color: #cece7c;
   font-family: 'Open Sans', sans-serif;
   font-size: 2.5rem;
   text-shadow: 0.1rem 0.1rem black;
 }
 
 .indexContainer .quoteContainer span {
+  color: white;
   font-family: 'Kaushan Script', cursive;
+}
+
+.aboutContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/minimal2.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 0.5rem;
+  padding-top: 5.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  width: 80%;
+}
+
+.contactContainer {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/minimal.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  padding: 0.5rem;
+  padding-top: 5.5rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+
+.contact {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  width: 80%;
 }
 
 * {
