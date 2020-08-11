@@ -1,5 +1,4 @@
 @import '../../views/partials/header/_header.scss';
-@import '../../views/partials/footer/_footer.scss';
 @import '../../views/_index.scss';
 @import '../../views/about/_about.scss';
 @import '../../views/contact/_contact.scss';
@@ -14,6 +13,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+
   .appInnerContainer {
     flex-grow: 1;
     overflow-y: auto;
