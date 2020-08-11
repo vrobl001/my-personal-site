@@ -1,5 +1,27 @@
 .navbar {
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0rem 0.1rem 0.25rem 0rem rgba(66, 82, 110, 0.5);
+  background-color: rgba(0, 0, 0, 0.9);
+  font-family: 'Open Sans', sans-serif;
+  height: 3.5rem;
+  padding: 0;
   z-index: 1;
+  .navbar-brand {
+    margin-left: 0.75rem;
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+  ul {
+    height: 3.5rem;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+    padding: 0 0.75rem;
+  }
+  li:hover {
+    background-color: rgba(100, 100, 100, 0.1);
+    color: white;
+  }
 }
