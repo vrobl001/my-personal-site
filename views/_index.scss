@@ -1,5 +1,5 @@
 .indexContainer {
-  background-image: url('/images/minimal3.jpg');
+  background-image: url('/images/backgrounds/rock_climb.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: rgb(8, 47, 78);
@@ -18,7 +18,7 @@
       color: white;
       font-family: 'Kaushan Script', cursive;
       font-size: 4rem;
-      text-shadow: 0.1rem 0.1rem black;
+      text-shadow: -0.5rem -0.25rem black;
     }
 
     .profilePicContainer {
@@ -27,7 +27,7 @@
 
       .profilePic {
         border-radius: 50%;
-        box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
+        box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
         height: 16rem;
         margin: 1rem;
       }
@@ -39,7 +39,7 @@
 
       pre {
         background-color: rgb(30, 30, 30);
-        box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
+        box-shadow: -0.5rem 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
         color: white;
         padding: 0.5rem;
         width: 50rem;
@@ -80,13 +80,12 @@
     width: 100%;
 
     p {
-      color: rgb(206, 206, 124);
-      font-family: 'Open Sans', sans-serif;
-      font-size: 2.5rem;
-      text-shadow: 0.1rem 0.1rem black;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
     }
     span {
-      color: white;
+      color: rgb(53, 140, 214);
       font-family: 'Kaushan Script', cursive;
     }
   }

@@ -44,7 +44,7 @@
 }
 
 .indexContainer {
-  background-image: url("/images/minimal3.jpg");
+  background-image: url("/images/backgrounds/rock_climb.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   background-color: #082f4e;
@@ -70,7 +70,7 @@
   color: white;
   font-family: 'Kaushan Script', cursive;
   font-size: 4rem;
-  text-shadow: 0.1rem 0.1rem black;
+  text-shadow: -0.5rem -0.25rem black;
 }
 
 .indexContainer .infoContainer .profilePicContainer {
@@ -84,8 +84,8 @@
 
 .indexContainer .infoContainer .profilePicContainer .profilePic {
   border-radius: 50%;
-  -webkit-box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
-          box-shadow: 0rem 0rem 0.1rem 0.1rem rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
+          box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
   height: 16rem;
   margin: 1rem;
 }
@@ -101,8 +101,8 @@
 
 .indexContainer .infoContainer .profileContainer pre {
   background-color: #1e1e1e;
-  -webkit-box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
-          box-shadow: -0.2rem 0.2rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: -0.5rem 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
+          box-shadow: -0.5rem 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
   color: white;
   padding: 0.5rem;
   width: 50rem;
@@ -151,14 +151,13 @@
 }
 
 .indexContainer .quoteContainer p {
-  color: #cece7c;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 2.5rem;
-  text-shadow: 0.1rem 0.1rem black;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
 }
 
 .indexContainer .quoteContainer span {
-  color: white;
+  color: #358cd6;
   font-family: 'Kaushan Script', cursive;
 }
 
@@ -166,7 +165,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/images/minimal2.jpg");
+  background-image: url("/images/backgrounds/purple_forest.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: -webkit-box;
@@ -190,11 +189,12 @@ h1 {
 }
 
 .about {
-  background-color: rgba(0, 0, 0, 0.75);
-  color: white;
+  background-color: rgba(255, 255, 255, 0.75);
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-family: 'Open Sans', sans-serif;
   padding: 1rem;
   width: 80%;
 }
@@ -203,7 +203,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/images/minimal.jpg");
+  background-image: url("/images/backgrounds/blue_mountains.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
   display: -webkit-box;
