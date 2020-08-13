@@ -74,13 +74,14 @@
   .quoteContainer {
     display: none;
   }
+
   @media only screen and (min-width: 1675px) {
     .quoteContainer {
       align-items: flex-end;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding-right: 0.8rem;
+      padding-right: 1rem;
       width: 100%;
 
       p {

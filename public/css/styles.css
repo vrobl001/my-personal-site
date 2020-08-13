@@ -161,7 +161,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-right: 0.8rem;
+    padding-right: 1rem;
     width: 100%;
   }
   .indexContainer .quoteContainer p {
