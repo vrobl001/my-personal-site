@@ -1,11 +1,7 @@
 // Require Modules
 const express = require('express');
 const logger = require('morgan');
-const indexRoutes = require('./routes/index');
-const aboutRoutes = require('./routes/about');
-const contactRoutes = require('./routes/contact');
-const projectsRoutes = require('./routes/projects');
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // Set up express app
 const app = express();
@@ -19,10 +15,10 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
 // Mount Routes app.use()
-app.use('/', indexRoutes);
-app.use('/about', aboutRoutes);
-app.use('/contact', contactRoutes);
-app.use('/projects', projectsRoutes);
+app.use('/', require('./routes/index'));
+app.use('/about', require('./routes/about'));
+app.use('/contact', require('./routes/contact'));
+app.use('/projects', require('./routes/projects'));
 
 // Tell app to listen
 app.listen(port, () => {
