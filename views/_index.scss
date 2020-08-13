@@ -7,7 +7,6 @@
   height: 100%;
   justify-content: space-evenly;
   width: 100%;
-
   .infoContainer {
     display: flex;
     flex-direction: column;
@@ -20,54 +19,46 @@
       font-size: 4rem;
       text-shadow: -0.5rem -0.25rem black;
     }
+  }
 
-    .profilePicContainer {
-      display: flex;
-      justify-content: center;
-
-      .profilePic {
-        border-radius: 50%;
-        box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
-        height: 16rem;
-        margin: 1rem;
-      }
+  .profilePicContainer {
+    display: flex;
+    justify-content: center;
+    .profilePic {
+      border-radius: 50%;
+      box-shadow: 0rem 0rem 0.2rem 0.1rem rgba(255, 255, 255, 0.5);
+      height: 16rem;
+      margin: 1rem;
     }
+  }
 
-    .profileContainer {
-      display: flex;
-      justify-content: center;
-
-      pre {
-        background-color: rgb(30, 30, 30);
-        box-shadow: -0.5rem 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
-        color: white;
-        padding: 0.5rem;
-        width: 50rem;
-      }
-
-      .darkBlue {
-        color: rgb(53, 140, 214);
-      }
-
-      .blue {
-        color: rgb(79, 193, 255);
-      }
-
-      .lightBlue {
-        color: rgb(156, 220, 254);
-      }
-
-      .green {
-        color: rgb(0, 220, 23);
-      }
-
-      .lightGreen {
-        color: rgb(181, 206, 168);
-      }
-
-      .orange {
-        color: rgb(206, 131, 73);
-      }
+  .profileContainer {
+    display: flex;
+    justify-content: center;
+    pre {
+      background-color: rgb(30, 30, 30);
+      box-shadow: -0.5rem 0.5rem 0.2rem 0rem rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 0.5rem;
+      width: 50rem;
+    }
+    .darkBlue {
+      color: rgb(53, 140, 214);
+    }
+    .blue {
+      color: rgb(79, 193, 255);
+    }
+    .lightBlue {
+      color: rgb(156, 220, 254);
+    }
+    .green {
+      color: rgb(0, 220, 23);
+    }
+    .lightGreen {
+      color: rgb(181, 206, 168);
+    }
+    .orange {
+      color: rgb(206, 131, 73);
     }
   }
 
