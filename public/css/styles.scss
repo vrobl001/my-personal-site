@@ -9,6 +9,11 @@
   padding: 0;
 }
 
+body,
+html {
+  height: 100%;
+}
+
 .appOuterContainer {
   display: flex;
   flex-direction: column;
@@ -16,7 +21,6 @@
 
   .appInnerContainer {
     flex-grow: 1;
-    overflow-y: auto;
   }
 }
 

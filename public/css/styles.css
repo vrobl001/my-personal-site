@@ -3,6 +3,9 @@
   font-family: 'Open Sans', sans-serif;
   height: 3.5rem;
   padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
   z-index: 1;
 }
 
@@ -45,9 +48,9 @@
 
 .indexContainer {
   background-image: url("/images/backgrounds/rock_climb.jpg");
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: #082f4e;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,14 +58,21 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 0.5rem;
-  padding-top: 5.5rem;
-  position: absolute;
-  top: 0;
   width: 100%;
 }
 
 .indexContainer .infoContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding-top: 3.5rem;
   width: 100%;
 }
 
@@ -133,32 +143,36 @@
 }
 
 .indexContainer .quoteContainer {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 0.8rem;
-  width: 100%;
+  display: none;
 }
 
-.indexContainer .quoteContainer p {
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-}
-
-.indexContainer .quoteContainer span {
-  color: #358cd6;
-  font-family: 'Kaushan Script', cursive;
+@media only screen and (min-width: 1675px) {
+  .indexContainer .quoteContainer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-right: 0.8rem;
+    width: 100%;
+  }
+  .indexContainer .quoteContainer p {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+  }
+  .indexContainer .quoteContainer span {
+    color: #358cd6;
+    font-family: 'Kaushan Script', cursive;
+  }
 }
 
 .aboutContainer {
@@ -177,26 +191,38 @@
           flex-direction: column;
   height: 100%;
   padding: 0.5rem;
-  padding-top: 5.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-h1 {
-  color: white;
-  text-align: center;
+.aboutContainer .accordion {
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
 }
 
-.about {
-  background-color: rgba(255, 255, 255, 0.75);
-  color: black;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.aboutContainer .accordion button {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.aboutContainer .accordion button:focus,
+.aboutContainer .accordion button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+.aboutContainer .accordion .card-body {
   font-family: 'Open Sans', sans-serif;
   padding: 1rem;
-  width: 80%;
+}
+
+.aboutContainer .accordion:active {
+  outline: none;
 }
 
 .contactContainer {
@@ -209,10 +235,6 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   height: 100%;
   padding: 0.5rem;
   padding-top: 5.5rem;
@@ -226,7 +248,7 @@ h1 {
   text-align: center;
 }
 
-.contact {
+.map {
   background-color: rgba(0, 0, 0, 0.75);
   color: white;
   display: -webkit-box;
@@ -239,6 +261,11 @@ h1 {
 * {
   margin: 0;
   padding: 0;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 .appOuterContainer {
@@ -256,7 +283,6 @@ h1 {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  overflow-y: auto;
 }
 
 ::-webkit-scrollbar {
