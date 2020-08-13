@@ -1,18 +1,18 @@
 .indexContainer {
   background-image: url('/images/backgrounds/rock_climb.jpg');
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-color: rgb(8, 47, 78);
+  background-size: cover;
   display: flex;
   height: 100%;
   justify-content: space-evenly;
-  padding: 0.5rem;
-  padding-top: 5.5rem;
-  position: absolute;
-  top: 0;
   width: 100%;
 
   .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 3.5rem;
     width: 100%;
     h1 {
       color: white;
@@ -72,21 +72,26 @@
   }
 
   .quoteContainer {
-    align-items: flex-end;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 0.8rem;
-    width: 100%;
+    display: none;
+  }
+  @media only screen and (min-width: 1675px) {
+    .quoteContainer {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-right: 0.8rem;
+      width: 100%;
 
-    p {
-      color: white;
-      font-family: 'Poppins', sans-serif;
-      font-size: 2rem;
-    }
-    span {
-      color: rgb(53, 140, 214);
-      font-family: 'Kaushan Script', cursive;
+      p {
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2rem;
+      }
+      span {
+        color: rgb(53, 140, 214);
+        font-family: 'Kaushan Script', cursive;
+      }
     }
   }
 }
